@@ -1,0 +1,33 @@
+# dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Nx
+.nx/cache
+.nx/workspace-data
+
+# Next.js
+.next/
+out/
+
+# production
+build
+dist
+
+# env
+.env
+.env.local
+.env.*.local
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# misc
+.DS_Store
+*.pem
+
+# Prisma
+packages/db/node_modules

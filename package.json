@@ -1,0 +1,26 @@
+{
+  "name": "solvepath",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "nx dev web",
+    "dev:admin": "nx dev admin",
+    "dev:landing": "nx dev landing",
+    "build": "nx run-many --target=build",
+    "lint": "nx run-many --target=lint",
+    "db:generate": "nx prisma-generate db",
+    "db:migrate": "nx prisma-migrate db",
+    "db:studio": "nx prisma-studio db"
+  },
+  "devDependencies": {
+    "@nx/eslint": "^20.0.0",
+    "@nx/next": "^20.0.0",
+    "@nx/js": "^20.0.0",
+    "nx": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}
